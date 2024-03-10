@@ -1,0 +1,36 @@
+### Create
+POST http://localhost:8080/api/v1/pet-album/pet/8
+Content-Type: application/json
+
+{
+  "title": "Test Title3",
+  "content": "Test Content3",
+  "petAlbumImgs": [
+    {
+      "uploadFileUrl": "Test 이미지 URL 1"
+    },
+    {
+      "uploadFileUrl": "Test 이미지 URL 2"
+    }
+  ]
+}
+
+### Read
+GET http://localhost:8080/api/v1/pet-album/1
+Accept: application/json
+
+### Read
+GET http://localhost:8080/api/v1/pet-album/pet/8
+Accept: application/json
+
+### Update
+PUT http://localhost:8080/api/v1/pet-album/1
+Content-Type: application/json
+
+{
+  "title": "Test Title Update",
+  "content": "Test Content"
+}
+
+### DELETE
+DELETE http://localhost:8080/api/v1/pet-album/3

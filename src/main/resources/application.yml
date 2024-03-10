@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: replUser
+      password: 1234
+      jdbc-url: jdbc:mysql://host.docker.internal:13306/pet_hub?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: replUser
+      password: 1234
+      jdbc-url: jdbc:mysql://host.docker.internal:13307/pet_hub?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+
+  jwt:
+    secretKey: vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalwejkfjweujrhfznmxcvwerxzcv

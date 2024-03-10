@@ -1,0 +1,18 @@
+###CREATE
+POST http://localhost:8080/api/boards
+
+{
+  "title": "새로운 게시물 제목",
+  "content": "새로운 게시물 내용",
+  "userId": 1,
+  "boardTab": "CAT"
+}
+
+###UPDATE
+PUT http://localhost:8080/api/boards/{boardid}
+
+{
+  "title": "업데이트 이름",
+  "content": "업데이트 내용",
+  "boardTab": "CAT"
+}
